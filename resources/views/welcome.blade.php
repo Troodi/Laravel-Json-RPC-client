@@ -24,10 +24,10 @@
             <tbody>
             @foreach($history as $row)
             <tr>
-                <th scope="row">{{ $row?->user_id }}</th>
-                <td>{{ $row?->user->name }}</td>
-                <td>{{ $row?->value }}</td>
-                <td>{{ $row?->balance }}</td>
+                <th scope="row">{{ $row['user_id'] }}</th>
+                <td>{{ $row['user']['name'] }}</td>
+                <td>{{ $row['value'] }}</td>
+                <td>{{ $row['balance'] }}</td>
             </tr>
             @endforeach
             </tbody>
